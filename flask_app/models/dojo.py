@@ -67,20 +67,6 @@ class Dojo:
         return dojo
 
 
-    #UPDATE
-    @classmethod
-    def update(cls, data):
-        query = "UPDATE dojos SET name = %(name)s, updated_at = NOW() WHERE id = %(id)s;"
-        results = connectToMySQL("dojos_and_ninjas").query_db(query, data)
-
-        return results
-    
-    #DELTE
-    @classmethod
-    def delete(cls, data):
-        query = "DELETE FROM dojos WHERE id = %(id)s;"
-        results = connectToMySQL("dojos_and_ninjas").query_db(query, data)
-
 
 
 

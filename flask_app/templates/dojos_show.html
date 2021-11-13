@@ -23,7 +23,7 @@
         <tbody>
             {% for ninja in dojo.ninjas %}
                 <tr class="table-info" style="font-weight: bold;">
-                    <td>{{ ninja.first_name }}</td>
+                    <td><a href="/ninjas/{{ ninja.id }}">{{ ninja.first_name }}</a></td>
                     <td>{{ ninja.last_name }}</td>
                     <td>{{ ninja.age }}</td>
                 </tr>
@@ -31,7 +31,7 @@
         </tbody>
     </table>
     <div class="home_tab" style="text-align: center; width: 150px; height: 60px; background-color: rgb(53, 46, 46); 
-        margin-left: 900px; margin-top: 200px; font-size: 27px; font-weight: bold; border-radius: 10px;">
+        margin-left: 700px; margin-top: 200px; font-size: 27px; font-weight: bold; border-radius: 10px;">
         <p style="padding-top: 5px;">
             <a href="/" style="color: rgb(23, 226, 253);">Home</a>
         </p>
